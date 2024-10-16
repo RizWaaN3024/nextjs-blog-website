@@ -1,7 +1,6 @@
 import React from 'react'
 import Pagination from '../pagination/Pagination'
 import styles from "./cardList.module.css"
-import Image from 'next/image'
 import Card from '../card/Card'
 
 const CardList = () => {
