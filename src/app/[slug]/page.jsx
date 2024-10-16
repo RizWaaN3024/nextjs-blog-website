@@ -1,6 +1,8 @@
 import React from 'react'
 import styles from "./singlePage.module.css"
 import Image from 'next/image'
+import Menu from '@/components/menu/Menu'
+import Comments from '@/components/comments/Comments'
 
 const SinglePage = () => {
     return (
@@ -32,23 +34,28 @@ const SinglePage = () => {
                     />
                 </div>
             </div>
-            <div className={styles.content}></div>
-            <div className={styles.post}>
-                <div className={styles.description}>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Dolorum placeat dicta aut distinctio? Voluptates tempore obcaecati facilis maxime totam 
-                        labore ipsum nulla fuga quia rerum, ullam facere voluptate quos asperiores eos nisi
-                         necessitatibus. Dignissimos a corrupti incidunt cum fugit vel.
-                    </p>
-                    <h2>Lorem ipsum dolor sit amet.</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Dolorum placeat dicta aut distinctio? Voluptates tempore obcaecati facilis maxime totam 
-                        labore ipsum nulla fuga quia rerum, ullam facere voluptate quos asperiores eos nisi
-                         necessitatibus. Dignissimos a corrupti incidunt cum fugit vel.
-                    </p>
+            <div className={styles.content}>
+                <div className={styles.post}>
+                    <div className={styles.description}>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Dolorum placeat dicta aut distinctio? Voluptates tempore obcaecati facilis maxime totam 
+                            labore ipsum nulla fuga quia rerum, ullam facere voluptate quos asperiores eos nisi
+                            necessitatibus. Dignissimos a corrupti incidunt cum fugit vel.
+                        </p>
+                        <h2>Lorem ipsum dolor sit amet.</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Dolorum placeat dicta aut distinctio? Voluptates tempore obcaecati facilis maxime totam 
+                            labore ipsum nulla fuga quia rerum, ullam facere voluptate quos asperiores eos nisi
+                            necessitatibus. Dignissimos a corrupti incidunt cum fugit vel.
+                        </p>
+                    </div>
+                    <div className={styles.comments}>
+                        <Comments />
+                    </div>
                 </div>
+                <Menu />
             </div>
         </div>
     )
