@@ -14,6 +14,7 @@ const CardList = () => {
                 <Card />
                 <Card />
             </div>
+            <Pagination />
         </div>
     )
 }
