@@ -12,7 +12,7 @@ const AuthLinks = () => {
     const { status } = useSession();
     return (
         <>
-            {status === "notauthenticated" ? (
+            {status === "unauthenticated" ? (
                 <Link href={"/login"}>Login</Link>
             ) : (
                 <>
