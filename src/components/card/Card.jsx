@@ -3,9 +3,9 @@ import styles from "./card.module.css"
 import Image from 'next/image'
 import Link from 'next/link'
 
-const Card = () => {
+const Card = ({key, item}) => {
     return (
-        <div className={styles.container}>
+        <div className={styles.container} key={key}>
             <div className={styles.imageContainer}>
                 <Image
                     src="/p1.jpeg"
@@ -20,7 +20,7 @@ const Card = () => {
                     <span className={styles.category}>CULTURE</span>
                 </div>
                 <Link href="/">
-                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, iusto.</h1>
+                    <h1>{item.title}</h1>
                 </Link>
                 <p className={styles.desc}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae, atque nostrum reiciendis sunt at iure, odio illum obcaecati optio necessitatibus ex aliquam inventore similique rem. Exercitationem vero aliquam aut sint.</p>
                 <Link className={styles.link} href="/">Read More</Link>
